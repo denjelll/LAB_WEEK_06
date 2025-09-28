@@ -1,11 +1,8 @@
 package com.example.lab_week_06
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -41,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         //Instantiate ItemTouchHelper for the swipe to delete callback and
-//attach it to the recycler view
+        //attach it to the recycler view
         val itemTouchHelper = ItemTouchHelper(catAdapter.swipeToDeleteCallback)
         itemTouchHelper.attachToRecyclerView(recyclerView)
 
@@ -68,6 +65,55 @@ class MainActivity : AppCompatActivity() {
                     "Curious George",
                     "Award winning investigator",
                     "https://cdn2.thecatapi.com/images/bar.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.ExoticShorthair,
+                    "Tom",
+                    "Lazy sleeper",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.BalineseJavanese,
+                    "Luna",
+                    "Loves chasing butterflies",
+                    "https://cdn2.thecatapi.com/images/9ba.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.AmericanCurl,
+                    "Simba",
+                    "Brave little lion",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNQ.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.ExoticShorthair,
+                    "Molly",
+                    "Cuddly and cute",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyNA.jpg"
+                ),
+                CatModel(
+                    Gender.Male,
+                    CatBreed.BalineseJavanese,
+                    "Charlie",
+                    "Always hungry",
+                    "https://cdn2.thecatapi.com/images/9u6.jpg"
+                ),
+                CatModel(
+                    Gender.Female,
+                    CatBreed.AmericanCurl,
+                    "Daisy",
+                    "Playful kitten",
+                    "https://cdn2.thecatapi.com/images/6qi.jpg"
+                ),
+                CatModel(
+                    Gender.Unknown,
+                    CatBreed.ExoticShorthair,
+                    "Shadow",
+                    "Mysterious wanderer",
+                    "https://cdn2.thecatapi.com/images/MTY3ODIyMg.jpg"
                 )
             )
         )
